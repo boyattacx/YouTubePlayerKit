@@ -45,6 +45,7 @@
 
         // Configure YouTube Player
         window.YT.ready(() => {
+            document.getElementsByTagName("iframe")[0].setAttribute("allowfullscreen", "");
             // Initialize YouTube Player
             // The second parameter will be replaced during runtime
             player = new window.YT.Player(
